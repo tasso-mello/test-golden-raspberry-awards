@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.raspberry.awards", "api.raspberry.awards\api.raspberry.awards.csproj", "{847AD367-BF6A-43AC-9B2D-C6FC6073EDEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common.raspberry.awards", "common.raspberry.awards\common.raspberry.awards.csproj", "{70DC8488-B797-4A13-A8C1-D6654EBCA6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data.raspberry.awards", "data.raspberry.awards\data.raspberry.awards.csproj", "{B764A1F1-93C2-4ABE-8F51-75213F44E058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{847AD367-BF6A-43AC-9B2D-C6FC6073EDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847AD367-BF6A-43AC-9B2D-C6FC6073EDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847AD367-BF6A-43AC-9B2D-C6FC6073EDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847AD367-BF6A-43AC-9B2D-C6FC6073EDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DC8488-B797-4A13-A8C1-D6654EBCA6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DC8488-B797-4A13-A8C1-D6654EBCA6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DC8488-B797-4A13-A8C1-D6654EBCA6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DC8488-B797-4A13-A8C1-D6654EBCA6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B764A1F1-93C2-4ABE-8F51-75213F44E058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B764A1F1-93C2-4ABE-8F51-75213F44E058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B764A1F1-93C2-4ABE-8F51-75213F44E058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B764A1F1-93C2-4ABE-8F51-75213F44E058}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BBC685A-E4C7-4AFF-98C7-5F855844467D}
+	EndGlobalSection
+EndGlobal

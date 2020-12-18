@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>api.raspberry.awards</name>
+    </assembly>
+    <members>
+        <member name="M:api.raspberry.awards.Controllers.MovieController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <response code="200">Json list</response>
+            <response code="400">Error to try get by name</response>  
+        </member>
+        <member name="M:api.raspberry.awards.Controllers.MovieController.Get(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">Json object</response>
+            <response code="400">Error to try get by name</response>  
+        </member>
+        <member name="M:api.raspberry.awards.Controllers.MovieController.Get(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+            <response code="200">Json object</response>
+            <response code="400">Error to try get by name</response>  
+        </member>
+        <member name="M:api.raspberry.awards.Controllers.MovieController.Post(common.raspberry.awards.Models.Movie,System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="User"></param>
+            <param name="idUser"></param>
+            <returns></returns>
+            <response code="201">Register is created</response>
+            <response code="400">Error to try create</response>  
+        </member>
+        <member name="M:api.raspberry.awards.Controllers.MovieController.Put(common.raspberry.awards.Models.Movie,System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <param name="idUser"></param>
+            <returns></returns>
+            <response code="200">Register is edited</response>
+            <response code="400">Error to try edit</response>
+        </member>
+        <member name="M:api.raspberry.awards.Controllers.MovieController.Delete(common.raspberry.awards.Models.Movie)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+            <response code="200">Register is deleted</response>
+            <response code="400">Error to try delete</response>  
+        </member>
+        <member name="T:api.raspberry.awards.Core.Compression.BrotliCompressionProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:api.raspberry.awards.Core.Compression.BrotliCompressionProvider.EncodingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:api.raspberry.awards.Core.Compression.BrotliCompressionProvider.SupportsFlush">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Compression.BrotliCompressionProvider.CreateStream(System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="outputStream"></param>
+            <returns></returns>
+        </member>
+        <member name="T:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.#ctor(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="statusCode"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.#ctor(System.Int32,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="statusCode"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.#ctor(System.Int32,Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            
+            </summary>
+            <param name="statusCode"></param>
+            <param name="errorObject"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="P:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.ResourceReferenceProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.StatusCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:api.raspberry.awards.Core.Exceptions.HttpStatusCodeException.ContentType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:api.raspberry.awards.Core.Exceptions.HttpStatusCodeExceptionMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+            <param name="loggerFactory"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeExceptionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:api.raspberry.awards.Core.Exceptions.HttpStatusCodeExceptionMiddlewareExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Core.Exceptions.HttpStatusCodeExceptionMiddlewareExtensions.UseHttpStatusCodeExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:api.raspberry.awards.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:api.raspberry.awards.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:api.raspberry.awards.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:api.raspberry.awards.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:api.raspberry.awards.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,data.raspberry.awards.Context.RaspberryContext)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="db"></param>
+        </member>
+    </members>
+</doc>
